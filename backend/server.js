@@ -7,8 +7,11 @@ const app = express();
 app.use(cors());
 
 const server = http.createServer(app);
-const io = new Server(server, {
-    cors: { origin: "*" }
+const io = require('socket.io')(server, {
+  cors: {
+    origin: "*", // This allows any website to connect
+    methods: ["GET", "POST"]
+  }
 });
 
 // Mock Database with fixed timestamps
