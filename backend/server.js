@@ -7,13 +7,13 @@ const app = express();
 app.use(cors());
 
 const server = http.createServer(app);
-const io = require('socket.io')(server, {
+const io = require("socket.io")(server, {
   cors: {
-    origin: "*", // This allows any website to connect
-    methods: ["GET", "POST"]
+    origin: "*", // This allows all domains (Vercel, Localhost, etc.) to connect
+    methods: ["GET", "POST"],
+    credentials: true
   }
 });
-
 // Mock Database with fixed timestamps
 let items = [
     {
