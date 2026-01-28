@@ -1,4 +1,4 @@
-# 🔨 Real-Time Auction Platform (Live Demo:https://drive.google.com/file/d/1NEapSlzWWmAeW-72qMW1ZvGpdtWU56OI/view?usp=sharing)
+# 🔨 Real-Time Auction Platform 
 
 A high-performance, containerized bidding application built to demonstrate real-time data synchronization and race-condition handling in a distributed environment.
 
@@ -60,3 +60,4 @@ Place a bid in Window A.
 Observe Window B updating the price and showing the "Outbid" status instantly without a refresh.
 
 Watch the timer hit zero to see the "Bid" button disable automatically.
+(Live Demo:https://drive.google.com/file/d/1NEapSlzWWmAeW-72qMW1ZvGpdtWU56OI/view?usp=sharing)
