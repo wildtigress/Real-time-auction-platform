@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
-
-const socket = io('https://real-time-auction-platform.onrender.com');
+// Change this line back to localhost
+const socket = io("http://localhost:4000");
 const MY_USER_ID = "user_" + Math.random().toString(36).substr(2, 5);
 
 function ItemCard({ item }) {
